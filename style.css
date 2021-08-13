@@ -220,7 +220,7 @@ h3 {
 .player-controls {
 	position: relative;
 	top: -15px;
-	left: 110px;
+	left: 100px;
 	width: 200px;
 	display: flex;
 	flex-direction: row;
@@ -269,6 +269,15 @@ footer a{
 footer a:hover{
     color: var(--hover);
 }
+/* Media Query Laptop Non:retina */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+	.player-container{
+        margin-top: 100px;
+    }
+}
 /* Media Query: iPhone (Vertical) */
 @media screen and (max-width: 376px) {
 
@@ -293,6 +302,7 @@ footer a:hover{
 	}
 
 }
+
 @media only screen and (max-width: 600px) {
     .main{
         margin-top: 15vh;
