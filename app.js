@@ -210,7 +210,7 @@ function muteMusic (){
     music.muted = !music.muted
 }
 function unmuteMusic (){
-    muteBtn.classList.replace("fa-volume-mute","fa-volume-up")
+    volumeBtn.classList.replace("fa-volume-mute","fa-volume-up")
     isMute = !isMute;
     music.muted = !music.muted
 }
