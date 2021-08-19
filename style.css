@@ -251,8 +251,8 @@ h3 {
 	position: relative;
 	top: 3px;
 }
-#mute{
-	min-width: 15px;
+#volume{
+	min-width: 25px;
 }
 /* footer */
 footer{
