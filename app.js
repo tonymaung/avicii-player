@@ -56,7 +56,7 @@ const currentTrackTime = document.getElementById("current-time");
 const durationTrack = document.getElementById("duration");
 const progressContainer = document.getElementById("progress-container");
 const progress = document.getElementById('progress');
-const muteBtn = document.getElementById("mute");
+const volumeBtn = document.getElementById("volume");
 let isRepeat = false;
 let isMute = false;
 let isPlaying  = false;
@@ -205,12 +205,12 @@ function setProgressBar (e){
 }
 //Mute Music 
 function muteMusic (){
-    muteBtn.classList.replace("fa-volume-mute","fa-volume-up")
+    volumeBtn.classList.replace("fa-volume-up","fa-volume-mute")
     isMute = !isMute;
     music.muted = !music.muted
 }
 function unmuteMusic (){
-    muteBtn.classList.replace("fa-volume-up","fa-volume-mute")
+    muteBtn.classList.replace("fa-volume-mute","fa-volume-up")
     isMute = !isMute;
     music.muted = !music.muted
 }
@@ -220,4 +220,4 @@ nextBtn.addEventListener("click", nextSong);
 music.addEventListener("timeupdate", updateProgressBar)
 progressContainer.addEventListener("click", setProgressBar)
 music.addEventListener("ended", nextSong);
-muteBtn.addEventListener("click", ()=>(isMute? unmuteMusic() : muteMusic()));
+volumeBtn.addEventListener("click", ()=>(isMute? unmuteMusic() : muteMusic()));
